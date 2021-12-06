@@ -1,0 +1,1479 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 51;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		0B15C1AFF46D53DBE90F1671 /* Pods_ZemogaApp_iOSTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4F4A6FF2F6EE448E5E5E4792 /* Pods_ZemogaApp_iOSTests.framework */; };
+		28F15EF60A3D4ABA42D72470 /* Pods_ZemogaApp_iOS.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1227BD9A88F3DEA417B86078 /* Pods_ZemogaApp_iOS.framework */; };
+		4543B558275C902300404AC0 /* ZAModal.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4543B557275C902300404AC0 /* ZAModal.storyboard */; };
+		4543B55A275C90BA00404AC0 /* ModalViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4543B559275C90BA00404AC0 /* ModalViewController.swift */; };
+		4543B55C275E532900404AC0 /* UIImageView+ZA.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4543B55B275E532900404AC0 /* UIImageView+ZA.swift */; };
+		458DF0F227590F1100A27949 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 458DF0F127590F1100A27949 /* AppDelegate.swift */; };
+		458DF0F627590F1100A27949 /* BaseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 458DF0F527590F1100A27949 /* BaseViewController.swift */; };
+		458DF0F927590F1100A27949 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 458DF0F727590F1100A27949 /* Main.storyboard */; };
+		458DF0FC27590F1100A27949 /* ZemogaApp_iOS.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 458DF0FA27590F1100A27949 /* ZemogaApp_iOS.xcdatamodeld */; };
+		458DF0FE27590F1300A27949 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 458DF0FD27590F1300A27949 /* Assets.xcassets */; };
+		458DF10127590F1300A27949 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 458DF0FF27590F1300A27949 /* LaunchScreen.storyboard */; };
+		458DF10C27590F1400A27949 /* ZemogaApp_iOSTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 458DF10B27590F1400A27949 /* ZemogaApp_iOSTests.swift */; };
+		458DF11727590F1400A27949 /* ZemogaApp_iOSUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 458DF11627590F1400A27949 /* ZemogaApp_iOSUITests.swift */; };
+		458DF1422759297200A27949 /* Helper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 458DF1412759297200A27949 /* Helper.swift */; };
+		458DF144275929B200A27949 /* ZASettings.swift in Sources */ = {isa = PBXBuildFile; fileRef = 458DF143275929B200A27949 /* ZASettings.swift */; };
+		458DF148275929FD00A27949 /* LoadingIndicatorViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 458DF146275929FD00A27949 /* LoadingIndicatorViewController.swift */; };
+		458DF149275929FD00A27949 /* LoadingIndicatorViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 458DF147275929FD00A27949 /* LoadingIndicatorViewController.xib */; };
+		458DF14B27592A8D00A27949 /* UIViewController+ZA.swift in Sources */ = {isa = PBXBuildFile; fileRef = 458DF14A27592A8D00A27949 /* UIViewController+ZA.swift */; };
+		458DF14E27592B9000A27949 /* PostsHomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 458DF14C27592B9000A27949 /* PostsHomeViewController.swift */; };
+		458DF14F27592B9000A27949 /* PostsHomeViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 458DF14D27592B9000A27949 /* PostsHomeViewController.xib */; };
+		458DF15127592F1700A27949 /* AppRoute.swift in Sources */ = {isa = PBXBuildFile; fileRef = 458DF15027592F1700A27949 /* AppRoute.swift */; };
+		458DF15427592F4F00A27949 /* GeneralRoute.swift in Sources */ = {isa = PBXBuildFile; fileRef = 458DF15327592F4F00A27949 /* GeneralRoute.swift */; };
+		458DF1562759305800A27949 /* UINavigationController+ZA.swift in Sources */ = {isa = PBXBuildFile; fileRef = 458DF1552759305800A27949 /* UINavigationController+ZA.swift */; };
+		458DF1582759312700A27949 /* NetworkService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 458DF1572759312700A27949 /* NetworkService.swift */; };
+		458DF15B2759323900A27949 /* PostEndpoint.swift in Sources */ = {isa = PBXBuildFile; fileRef = 458DF15A2759323900A27949 /* PostEndpoint.swift */; };
+		458DF15D2759324600A27949 /* PostsAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = 458DF15C2759324600A27949 /* PostsAPI.swift */; };
+		458DF15F275933BA00A27949 /* Posts.swift in Sources */ = {isa = PBXBuildFile; fileRef = 458DF15E275933BA00A27949 /* Posts.swift */; };
+		458DF1612759346900A27949 /* PostsHomeModels.swift in Sources */ = {isa = PBXBuildFile; fileRef = 458DF1602759346900A27949 /* PostsHomeModels.swift */; };
+		458DF1632759350F00A27949 /* PostsHomeError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 458DF1622759350F00A27949 /* PostsHomeError.swift */; };
+		458DF165275935F900A27949 /* PostsWorker.swift in Sources */ = {isa = PBXBuildFile; fileRef = 458DF164275935F900A27949 /* PostsWorker.swift */; };
+		458DF167275937A600A27949 /* PostsHomeInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 458DF166275937A600A27949 /* PostsHomeInteractor.swift */; };
+		458DF169275941A900A27949 /* PostsHomePresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 458DF168275941A900A27949 /* PostsHomePresenter.swift */; };
+		458DF16B2759440700A27949 /* PostsHomeRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 458DF16A2759440700A27949 /* PostsHomeRouter.swift */; };
+		458DF16F27594B7A00A27949 /* PostsHomeTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 458DF16D27594B7A00A27949 /* PostsHomeTableViewCell.swift */; };
+		458DF17027594B7A00A27949 /* PostsHomeTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 458DF16E27594B7A00A27949 /* PostsHomeTableViewCell.xib */; };
+		458DF1722759576000A27949 /* UIBarButtonItem+Badge.swift in Sources */ = {isa = PBXBuildFile; fileRef = 458DF1712759576000A27949 /* UIBarButtonItem+Badge.swift */; };
+		458DF17427596CD800A27949 /* ZAView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 458DF17327596CD800A27949 /* ZAView.swift */; };
+		458DF1B4275A4AE000A27949 /* PostsDetailsModels.swift in Sources */ = {isa = PBXBuildFile; fileRef = 458DF1B3275A4AE000A27949 /* PostsDetailsModels.swift */; };
+		458DF1B6275A4AFD00A27949 /* PostsDetailsInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 458DF1B5275A4AFD00A27949 /* PostsDetailsInteractor.swift */; };
+		458DF1B8275A4B0E00A27949 /* PostsDetailsPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 458DF1B7275A4B0E00A27949 /* PostsDetailsPresenter.swift */; };
+		458DF1BA275A4B1900A27949 /* PostsDetailsRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 458DF1B9275A4B1900A27949 /* PostsDetailsRouter.swift */; };
+		458DF1BD275A4B2800A27949 /* PostsDetailsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 458DF1BB275A4B2800A27949 /* PostsDetailsViewController.swift */; };
+		458DF1BE275A4B2800A27949 /* PostsDetailsViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 458DF1BC275A4B2800A27949 /* PostsDetailsViewController.xib */; };
+		458DF1D7275A529600A27949 /* Inter-Medium.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 458DF1C1275A529600A27949 /* Inter-Medium.ttf */; };
+		458DF1D8275A529600A27949 /* Inter-Light.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 458DF1C2275A529600A27949 /* Inter-Light.ttf */; };
+		458DF1D9275A529600A27949 /* Inter-Thin.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 458DF1C3275A529600A27949 /* Inter-Thin.ttf */; };
+		458DF1DA275A529600A27949 /* Inter-Bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 458DF1C4275A529600A27949 /* Inter-Bold.ttf */; };
+		458DF1DB275A529600A27949 /* Inter-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 458DF1C5275A529600A27949 /* Inter-Regular.ttf */; };
+		458DF1DC275A529600A27949 /* Inter-ExtraBold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 458DF1C6275A529600A27949 /* Inter-ExtraBold.ttf */; };
+		458DF1DD275A529600A27949 /* Inter-ExtraLight.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 458DF1C7275A529600A27949 /* Inter-ExtraLight.ttf */; };
+		458DF1DE275A529600A27949 /* Inter-Black.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 458DF1C8275A529600A27949 /* Inter-Black.ttf */; };
+		458DF1DF275A529600A27949 /* Inter-SemiBold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 458DF1C9275A529600A27949 /* Inter-SemiBold.ttf */; };
+		458DF1E0275A529600A27949 /* Roboto-Medium.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 458DF1CB275A529600A27949 /* Roboto-Medium.ttf */; };
+		458DF1E1275A529600A27949 /* Roboto-Light.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 458DF1CC275A529600A27949 /* Roboto-Light.ttf */; };
+		458DF1E2275A529600A27949 /* Roboto-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 458DF1CD275A529600A27949 /* Roboto-Regular.ttf */; };
+		458DF1E3275A529600A27949 /* Roboto-MediumItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 458DF1CE275A529600A27949 /* Roboto-MediumItalic.ttf */; };
+		458DF1E4275A529600A27949 /* Roboto-ThinItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 458DF1CF275A529600A27949 /* Roboto-ThinItalic.ttf */; };
+		458DF1E5275A529600A27949 /* Roboto-BoldItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 458DF1D0275A529600A27949 /* Roboto-BoldItalic.ttf */; };
+		458DF1E6275A529600A27949 /* Roboto-LightItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 458DF1D1275A529600A27949 /* Roboto-LightItalic.ttf */; };
+		458DF1E7275A529600A27949 /* Roboto-Italic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 458DF1D2275A529600A27949 /* Roboto-Italic.ttf */; };
+		458DF1E8275A529600A27949 /* Roboto-BlackItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 458DF1D3275A529600A27949 /* Roboto-BlackItalic.ttf */; };
+		458DF1E9275A529600A27949 /* Roboto-Bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 458DF1D4275A529600A27949 /* Roboto-Bold.ttf */; };
+		458DF1EA275A529600A27949 /* Roboto-Thin.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 458DF1D5275A529600A27949 /* Roboto-Thin.ttf */; };
+		458DF1EB275A529600A27949 /* Roboto-Black.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 458DF1D6275A529600A27949 /* Roboto-Black.ttf */; };
+		458DF1EE275AB1C500A27949 /* HomeEndpointTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 458DF1ED275AB1C500A27949 /* HomeEndpointTest.swift */; };
+		458DF1F4275AB52000A27949 /* PostsHomeWorkerMock.swift in Sources */ = {isa = PBXBuildFile; fileRef = 458DF1F3275AB52000A27949 /* PostsHomeWorkerMock.swift */; };
+		458DF1F6275AB6E400A27949 /* PostsHomeFailureResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 458DF1F5275AB6E400A27949 /* PostsHomeFailureResponse.swift */; };
+		458DF1F8275AB97F00A27949 /* PostsHomeSuccessResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 458DF1F7275AB97F00A27949 /* PostsHomeSuccessResponse.swift */; };
+		458DF1FD275AC04F00A27949 /* PostsHomeDisplayLogicMock.swift in Sources */ = {isa = PBXBuildFile; fileRef = 458DF1FC275AC04F00A27949 /* PostsHomeDisplayLogicMock.swift */; };
+		458DF1FF275AC05B00A27949 /* PostsHomePresentationLogicMock.swift in Sources */ = {isa = PBXBuildFile; fileRef = 458DF1FE275AC05B00A27949 /* PostsHomePresentationLogicMock.swift */; };
+		458DF202275AC17F00A27949 /* PostsHomeViewControllerTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 458DF201275AC17F00A27949 /* PostsHomeViewControllerTest.swift */; };
+		458DF205275AC34400A27949 /* PostsHomePresenterTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 458DF204275AC34400A27949 /* PostsHomePresenterTest.swift */; };
+		458DF208275AC43E00A27949 /* PostsHomeInteractorTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 458DF207275AC43E00A27949 /* PostsHomeInteractorTest.swift */; };
+		458DF20F275AC5F900A27949 /* PostsDetailsDisplayLogicMock.swift in Sources */ = {isa = PBXBuildFile; fileRef = 458DF20E275AC5F900A27949 /* PostsDetailsDisplayLogicMock.swift */; };
+		458DF211275AC64F00A27949 /* PostsDetailsPresentationLogicMock.swift in Sources */ = {isa = PBXBuildFile; fileRef = 458DF210275AC64F00A27949 /* PostsDetailsPresentationLogicMock.swift */; };
+		458DF213275AC6A200A27949 /* PostsDetailsViewControllerTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 458DF212275AC6A200A27949 /* PostsDetailsViewControllerTest.swift */; };
+		458DF215275AC73500A27949 /* PostsDetailsPresenterTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 458DF214275AC73500A27949 /* PostsDetailsPresenterTest.swift */; };
+		458DF217275AC81C00A27949 /* PostsDetailsInteractorTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 458DF216275AC81C00A27949 /* PostsDetailsInteractorTest.swift */; };
+		5B62BE8CF170EB65412ECAC4 /* Pods_ZemogaApp_iOS_ZemogaApp_iOSUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 163081A811888D91228BD02B /* Pods_ZemogaApp_iOS_ZemogaApp_iOSUITests.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		458DF10827590F1400A27949 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 458DF0E627590F1100A27949 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 458DF0ED27590F1100A27949;
+			remoteInfo = "ZemogaApp-iOS";
+		};
+		458DF11327590F1400A27949 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 458DF0E627590F1100A27949 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 458DF0ED27590F1100A27949;
+			remoteInfo = "ZemogaApp-iOS";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		1227BD9A88F3DEA417B86078 /* Pods_ZemogaApp_iOS.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ZemogaApp_iOS.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		13EA951F4698AFE33B2977AE /* Pods-ZemogaApp-iOSTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ZemogaApp-iOSTests.release.xcconfig"; path = "Target Support Files/Pods-ZemogaApp-iOSTests/Pods-ZemogaApp-iOSTests.release.xcconfig"; sourceTree = "<group>"; };
+		163081A811888D91228BD02B /* Pods_ZemogaApp_iOS_ZemogaApp_iOSUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ZemogaApp_iOS_ZemogaApp_iOSUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		4543B557275C902300404AC0 /* ZAModal.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = ZAModal.storyboard; sourceTree = "<group>"; };
+		4543B559275C90BA00404AC0 /* ModalViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ModalViewController.swift; sourceTree = "<group>"; };
+		4543B55B275E532900404AC0 /* UIImageView+ZA.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIImageView+ZA.swift"; sourceTree = "<group>"; };
+		458DF0EE27590F1100A27949 /* ZemogaApp-iOS.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "ZemogaApp-iOS.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		458DF0F127590F1100A27949 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		458DF0F527590F1100A27949 /* BaseViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseViewController.swift; sourceTree = "<group>"; };
+		458DF0F827590F1100A27949 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		458DF0FB27590F1100A27949 /* ZemogaApp_iOS.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = ZemogaApp_iOS.xcdatamodel; sourceTree = "<group>"; };
+		458DF0FD27590F1300A27949 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		458DF10027590F1300A27949 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		458DF10227590F1300A27949 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		458DF10727590F1400A27949 /* ZemogaApp-iOSTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "ZemogaApp-iOSTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		458DF10B27590F1400A27949 /* ZemogaApp_iOSTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ZemogaApp_iOSTests.swift; sourceTree = "<group>"; };
+		458DF10D27590F1400A27949 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		458DF11227590F1400A27949 /* ZemogaApp-iOSUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "ZemogaApp-iOSUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		458DF11627590F1400A27949 /* ZemogaApp_iOSUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ZemogaApp_iOSUITests.swift; sourceTree = "<group>"; };
+		458DF11827590F1400A27949 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		458DF1412759297200A27949 /* Helper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Helper.swift; sourceTree = "<group>"; };
+		458DF143275929B200A27949 /* ZASettings.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ZASettings.swift; sourceTree = "<group>"; };
+		458DF146275929FD00A27949 /* LoadingIndicatorViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoadingIndicatorViewController.swift; sourceTree = "<group>"; };
+		458DF147275929FD00A27949 /* LoadingIndicatorViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = LoadingIndicatorViewController.xib; sourceTree = "<group>"; };
+		458DF14A27592A8D00A27949 /* UIViewController+ZA.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIViewController+ZA.swift"; sourceTree = "<group>"; };
+		458DF14C27592B9000A27949 /* PostsHomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostsHomeViewController.swift; sourceTree = "<group>"; };
+		458DF14D27592B9000A27949 /* PostsHomeViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = PostsHomeViewController.xib; sourceTree = "<group>"; };
+		458DF15027592F1700A27949 /* AppRoute.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppRoute.swift; sourceTree = "<group>"; };
+		458DF15327592F4F00A27949 /* GeneralRoute.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GeneralRoute.swift; sourceTree = "<group>"; };
+		458DF1552759305800A27949 /* UINavigationController+ZA.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UINavigationController+ZA.swift"; sourceTree = "<group>"; };
+		458DF1572759312700A27949 /* NetworkService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NetworkService.swift; sourceTree = "<group>"; };
+		458DF15A2759323900A27949 /* PostEndpoint.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostEndpoint.swift; sourceTree = "<group>"; };
+		458DF15C2759324600A27949 /* PostsAPI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostsAPI.swift; sourceTree = "<group>"; };
+		458DF15E275933BA00A27949 /* Posts.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Posts.swift; sourceTree = "<group>"; };
+		458DF1602759346900A27949 /* PostsHomeModels.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostsHomeModels.swift; sourceTree = "<group>"; };
+		458DF1622759350F00A27949 /* PostsHomeError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostsHomeError.swift; sourceTree = "<group>"; };
+		458DF164275935F900A27949 /* PostsWorker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostsWorker.swift; sourceTree = "<group>"; };
+		458DF166275937A600A27949 /* PostsHomeInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostsHomeInteractor.swift; sourceTree = "<group>"; };
+		458DF168275941A900A27949 /* PostsHomePresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostsHomePresenter.swift; sourceTree = "<group>"; };
+		458DF16A2759440700A27949 /* PostsHomeRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostsHomeRouter.swift; sourceTree = "<group>"; };
+		458DF16D27594B7A00A27949 /* PostsHomeTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostsHomeTableViewCell.swift; sourceTree = "<group>"; };
+		458DF16E27594B7A00A27949 /* PostsHomeTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = PostsHomeTableViewCell.xib; sourceTree = "<group>"; };
+		458DF1712759576000A27949 /* UIBarButtonItem+Badge.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIBarButtonItem+Badge.swift"; sourceTree = "<group>"; };
+		458DF17327596CD800A27949 /* ZAView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ZAView.swift; sourceTree = "<group>"; };
+		458DF1B3275A4AE000A27949 /* PostsDetailsModels.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostsDetailsModels.swift; sourceTree = "<group>"; };
+		458DF1B5275A4AFD00A27949 /* PostsDetailsInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostsDetailsInteractor.swift; sourceTree = "<group>"; };
+		458DF1B7275A4B0E00A27949 /* PostsDetailsPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostsDetailsPresenter.swift; sourceTree = "<group>"; };
+		458DF1B9275A4B1900A27949 /* PostsDetailsRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostsDetailsRouter.swift; sourceTree = "<group>"; };
+		458DF1BB275A4B2800A27949 /* PostsDetailsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostsDetailsViewController.swift; sourceTree = "<group>"; };
+		458DF1BC275A4B2800A27949 /* PostsDetailsViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = PostsDetailsViewController.xib; sourceTree = "<group>"; };
+		458DF1C1275A529600A27949 /* Inter-Medium.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Inter-Medium.ttf"; sourceTree = "<group>"; };
+		458DF1C2275A529600A27949 /* Inter-Light.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Inter-Light.ttf"; sourceTree = "<group>"; };
+		458DF1C3275A529600A27949 /* Inter-Thin.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Inter-Thin.ttf"; sourceTree = "<group>"; };
+		458DF1C4275A529600A27949 /* Inter-Bold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Inter-Bold.ttf"; sourceTree = "<group>"; };
+		458DF1C5275A529600A27949 /* Inter-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Inter-Regular.ttf"; sourceTree = "<group>"; };
+		458DF1C6275A529600A27949 /* Inter-ExtraBold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Inter-ExtraBold.ttf"; sourceTree = "<group>"; };
+		458DF1C7275A529600A27949 /* Inter-ExtraLight.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Inter-ExtraLight.ttf"; sourceTree = "<group>"; };
+		458DF1C8275A529600A27949 /* Inter-Black.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Inter-Black.ttf"; sourceTree = "<group>"; };
+		458DF1C9275A529600A27949 /* Inter-SemiBold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Inter-SemiBold.ttf"; sourceTree = "<group>"; };
+		458DF1CB275A529600A27949 /* Roboto-Medium.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Roboto-Medium.ttf"; sourceTree = "<group>"; };
+		458DF1CC275A529600A27949 /* Roboto-Light.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Roboto-Light.ttf"; sourceTree = "<group>"; };
+		458DF1CD275A529600A27949 /* Roboto-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Roboto-Regular.ttf"; sourceTree = "<group>"; };
+		458DF1CE275A529600A27949 /* Roboto-MediumItalic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Roboto-MediumItalic.ttf"; sourceTree = "<group>"; };
+		458DF1CF275A529600A27949 /* Roboto-ThinItalic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Roboto-ThinItalic.ttf"; sourceTree = "<group>"; };
+		458DF1D0275A529600A27949 /* Roboto-BoldItalic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Roboto-BoldItalic.ttf"; sourceTree = "<group>"; };
+		458DF1D1275A529600A27949 /* Roboto-LightItalic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Roboto-LightItalic.ttf"; sourceTree = "<group>"; };
+		458DF1D2275A529600A27949 /* Roboto-Italic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Roboto-Italic.ttf"; sourceTree = "<group>"; };
+		458DF1D3275A529600A27949 /* Roboto-BlackItalic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Roboto-BlackItalic.ttf"; sourceTree = "<group>"; };
+		458DF1D4275A529600A27949 /* Roboto-Bold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Roboto-Bold.ttf"; sourceTree = "<group>"; };
+		458DF1D5275A529600A27949 /* Roboto-Thin.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Roboto-Thin.ttf"; sourceTree = "<group>"; };
+		458DF1D6275A529600A27949 /* Roboto-Black.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Roboto-Black.ttf"; sourceTree = "<group>"; };
+		458DF1ED275AB1C500A27949 /* HomeEndpointTest.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HomeEndpointTest.swift; sourceTree = "<group>"; };
+		458DF1F3275AB52000A27949 /* PostsHomeWorkerMock.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostsHomeWorkerMock.swift; sourceTree = "<group>"; };
+		458DF1F5275AB6E400A27949 /* PostsHomeFailureResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostsHomeFailureResponse.swift; sourceTree = "<group>"; };
+		458DF1F7275AB97F00A27949 /* PostsHomeSuccessResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostsHomeSuccessResponse.swift; sourceTree = "<group>"; };
+		458DF1FC275AC04F00A27949 /* PostsHomeDisplayLogicMock.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostsHomeDisplayLogicMock.swift; sourceTree = "<group>"; };
+		458DF1FE275AC05B00A27949 /* PostsHomePresentationLogicMock.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostsHomePresentationLogicMock.swift; sourceTree = "<group>"; };
+		458DF201275AC17F00A27949 /* PostsHomeViewControllerTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostsHomeViewControllerTest.swift; sourceTree = "<group>"; };
+		458DF204275AC34400A27949 /* PostsHomePresenterTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostsHomePresenterTest.swift; sourceTree = "<group>"; };
+		458DF207275AC43E00A27949 /* PostsHomeInteractorTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostsHomeInteractorTest.swift; sourceTree = "<group>"; };
+		458DF20E275AC5F900A27949 /* PostsDetailsDisplayLogicMock.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostsDetailsDisplayLogicMock.swift; sourceTree = "<group>"; };
+		458DF210275AC64F00A27949 /* PostsDetailsPresentationLogicMock.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostsDetailsPresentationLogicMock.swift; sourceTree = "<group>"; };
+		458DF212275AC6A200A27949 /* PostsDetailsViewControllerTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostsDetailsViewControllerTest.swift; sourceTree = "<group>"; };
+		458DF214275AC73500A27949 /* PostsDetailsPresenterTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostsDetailsPresenterTest.swift; sourceTree = "<group>"; };
+		458DF216275AC81C00A27949 /* PostsDetailsInteractorTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostsDetailsInteractorTest.swift; sourceTree = "<group>"; };
+		45C10237E509E7D8C65BE1E9 /* Pods-ZemogaApp-iOS.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ZemogaApp-iOS.debug.xcconfig"; path = "Target Support Files/Pods-ZemogaApp-iOS/Pods-ZemogaApp-iOS.debug.xcconfig"; sourceTree = "<group>"; };
+		4F4A6FF2F6EE448E5E5E4792 /* Pods_ZemogaApp_iOSTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ZemogaApp_iOSTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		5A17683C491BE534BD789B79 /* Pods-ZemogaApp-iOSTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ZemogaApp-iOSTests.debug.xcconfig"; path = "Target Support Files/Pods-ZemogaApp-iOSTests/Pods-ZemogaApp-iOSTests.debug.xcconfig"; sourceTree = "<group>"; };
+		A9CEFAEDACB568A60707A785 /* Pods-ZemogaApp-iOS-ZemogaApp-iOSUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ZemogaApp-iOS-ZemogaApp-iOSUITests.release.xcconfig"; path = "Target Support Files/Pods-ZemogaApp-iOS-ZemogaApp-iOSUITests/Pods-ZemogaApp-iOS-ZemogaApp-iOSUITests.release.xcconfig"; sourceTree = "<group>"; };
+		ACB95DF8F6ECFAD4230BAACB /* Pods-ZemogaApp-iOS-ZemogaApp-iOSUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ZemogaApp-iOS-ZemogaApp-iOSUITests.debug.xcconfig"; path = "Target Support Files/Pods-ZemogaApp-iOS-ZemogaApp-iOSUITests/Pods-ZemogaApp-iOS-ZemogaApp-iOSUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		C7A0656F5E3891E28812511E /* Pods-ZemogaApp-iOS.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ZemogaApp-iOS.release.xcconfig"; path = "Target Support Files/Pods-ZemogaApp-iOS/Pods-ZemogaApp-iOS.release.xcconfig"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		458DF0EB27590F1100A27949 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				28F15EF60A3D4ABA42D72470 /* Pods_ZemogaApp_iOS.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		458DF10427590F1400A27949 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0B15C1AFF46D53DBE90F1671 /* Pods_ZemogaApp_iOSTests.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		458DF10F27590F1400A27949 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5B62BE8CF170EB65412ECAC4 /* Pods_ZemogaApp_iOS_ZemogaApp_iOSUITests.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		0477B8266D87765EDB317634 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				45C10237E509E7D8C65BE1E9 /* Pods-ZemogaApp-iOS.debug.xcconfig */,
+				C7A0656F5E3891E28812511E /* Pods-ZemogaApp-iOS.release.xcconfig */,
+				ACB95DF8F6ECFAD4230BAACB /* Pods-ZemogaApp-iOS-ZemogaApp-iOSUITests.debug.xcconfig */,
+				A9CEFAEDACB568A60707A785 /* Pods-ZemogaApp-iOS-ZemogaApp-iOSUITests.release.xcconfig */,
+				5A17683C491BE534BD789B79 /* Pods-ZemogaApp-iOSTests.debug.xcconfig */,
+				13EA951F4698AFE33B2977AE /* Pods-ZemogaApp-iOSTests.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		4543B556275C900500404AC0 /* Modal */ = {
+			isa = PBXGroup;
+			children = (
+				4543B559275C90BA00404AC0 /* ModalViewController.swift */,
+				4543B557275C902300404AC0 /* ZAModal.storyboard */,
+			);
+			path = Modal;
+			sourceTree = "<group>";
+		};
+		458DF0E527590F1100A27949 = {
+			isa = PBXGroup;
+			children = (
+				458DF0F027590F1100A27949 /* ZemogaApp-iOS */,
+				458DF10A27590F1400A27949 /* ZemogaApp-iOSTests */,
+				458DF11527590F1400A27949 /* ZemogaApp-iOSUITests */,
+				458DF0EF27590F1100A27949 /* Products */,
+				0477B8266D87765EDB317634 /* Pods */,
+				DDBB6F940140AB4585FCA07C /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		458DF0EF27590F1100A27949 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				458DF0EE27590F1100A27949 /* ZemogaApp-iOS.app */,
+				458DF10727590F1400A27949 /* ZemogaApp-iOSTests.xctest */,
+				458DF11227590F1400A27949 /* ZemogaApp-iOSUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		458DF0F027590F1100A27949 /* ZemogaApp-iOS */ = {
+			isa = PBXGroup;
+			children = (
+				458DF12427590F7500A27949 /* Externals */,
+				458DF12527590F8000A27949 /* Main */,
+				458DF12927590FAA00A27949 /* Resources */,
+				458DF12827590F9A00A27949 /* Common */,
+				458DF12727590F9200A27949 /* Scenes */,
+				458DF10227590F1300A27949 /* Info.plist */,
+				458DF0FA27590F1100A27949 /* ZemogaApp_iOS.xcdatamodeld */,
+			);
+			path = "ZemogaApp-iOS";
+			sourceTree = "<group>";
+		};
+		458DF10A27590F1400A27949 /* ZemogaApp-iOSTests */ = {
+			isa = PBXGroup;
+			children = (
+				458DF209275AC5A500A27949 /* PostsDetailsModuleTest */,
+				458DF1FA275AC02300A27949 /* PostsHomeModuleTest */,
+				458DF1EF275AB38400A27949 /* Test Response API */,
+				458DF1EC275AB1B500A27949 /* Test Endpoint */,
+				458DF10B27590F1400A27949 /* ZemogaApp_iOSTests.swift */,
+				458DF10D27590F1400A27949 /* Info.plist */,
+			);
+			path = "ZemogaApp-iOSTests";
+			sourceTree = "<group>";
+		};
+		458DF11527590F1400A27949 /* ZemogaApp-iOSUITests */ = {
+			isa = PBXGroup;
+			children = (
+				458DF11627590F1400A27949 /* ZemogaApp_iOSUITests.swift */,
+				458DF11827590F1400A27949 /* Info.plist */,
+			);
+			path = "ZemogaApp-iOSUITests";
+			sourceTree = "<group>";
+		};
+		458DF12427590F7500A27949 /* Externals */ = {
+			isa = PBXGroup;
+			children = (
+				458DF12D2759104000A27949 /* Util */,
+				458DF12C2759103B00A27949 /* Settings */,
+				458DF12B2759103200A27949 /* Extensions */,
+				458DF12A2759102800A27949 /* UI */,
+			);
+			path = Externals;
+			sourceTree = "<group>";
+		};
+		458DF12527590F8000A27949 /* Main */ = {
+			isa = PBXGroup;
+			children = (
+				458DF0F127590F1100A27949 /* AppDelegate.swift */,
+				458DF0F527590F1100A27949 /* BaseViewController.swift */,
+			);
+			path = Main;
+			sourceTree = "<group>";
+		};
+		458DF12727590F9200A27949 /* Scenes */ = {
+			isa = PBXGroup;
+			children = (
+				458DF1A7275A49F100A27949 /* Posts Details */,
+				458DF1372759286F00A27949 /* Posts Home */,
+			);
+			path = Scenes;
+			sourceTree = "<group>";
+		};
+		458DF12827590F9A00A27949 /* Common */ = {
+			isa = PBXGroup;
+			children = (
+				458DF1312759107100A27949 /* Router */,
+				458DF1302759106900A27949 /* Models */,
+				458DF12F2759106200A27949 /* Services */,
+				458DF12E2759105A00A27949 /* Worker */,
+			);
+			path = Common;
+			sourceTree = "<group>";
+		};
+		458DF12927590FAA00A27949 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				458DF1BF275A529600A27949 /* Fonts */,
+				458DF0FF27590F1300A27949 /* LaunchScreen.storyboard */,
+				458DF0FD27590F1300A27949 /* Assets.xcassets */,
+				458DF0F727590F1100A27949 /* Main.storyboard */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		458DF12A2759102800A27949 /* UI */ = {
+			isa = PBXGroup;
+			children = (
+				458DF17327596CD800A27949 /* ZAView.swift */,
+				4543B556275C900500404AC0 /* Modal */,
+				458DF145275929FD00A27949 /* Loading Indicator */,
+			);
+			path = UI;
+			sourceTree = "<group>";
+		};
+		458DF12B2759103200A27949 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				458DF1552759305800A27949 /* UINavigationController+ZA.swift */,
+				458DF14A27592A8D00A27949 /* UIViewController+ZA.swift */,
+				458DF1712759576000A27949 /* UIBarButtonItem+Badge.swift */,
+				4543B55B275E532900404AC0 /* UIImageView+ZA.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		458DF12C2759103B00A27949 /* Settings */ = {
+			isa = PBXGroup;
+			children = (
+				458DF143275929B200A27949 /* ZASettings.swift */,
+			);
+			path = Settings;
+			sourceTree = "<group>";
+		};
+		458DF12D2759104000A27949 /* Util */ = {
+			isa = PBXGroup;
+			children = (
+				458DF1412759297200A27949 /* Helper.swift */,
+			);
+			path = Util;
+			sourceTree = "<group>";
+		};
+		458DF12E2759105A00A27949 /* Worker */ = {
+			isa = PBXGroup;
+			children = (
+				458DF164275935F900A27949 /* PostsWorker.swift */,
+			);
+			path = Worker;
+			sourceTree = "<group>";
+		};
+		458DF12F2759106200A27949 /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				458DF1572759312700A27949 /* NetworkService.swift */,
+				458DF1592759321F00A27949 /* Posts */,
+			);
+			path = Services;
+			sourceTree = "<group>";
+		};
+		458DF1302759106900A27949 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				458DF15E275933BA00A27949 /* Posts.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		458DF1312759107100A27949 /* Router */ = {
+			isa = PBXGroup;
+			children = (
+				458DF15027592F1700A27949 /* AppRoute.swift */,
+				458DF15327592F4F00A27949 /* GeneralRoute.swift */,
+			);
+			path = Router;
+			sourceTree = "<group>";
+		};
+		458DF1372759286F00A27949 /* Posts Home */ = {
+			isa = PBXGroup;
+			children = (
+				458DF1382759288700A27949 /* Modules */,
+			);
+			path = "Posts Home";
+			sourceTree = "<group>";
+		};
+		458DF1382759288700A27949 /* Modules */ = {
+			isa = PBXGroup;
+			children = (
+				458DF1392759289500A27949 /* Posts */,
+			);
+			path = Modules;
+			sourceTree = "<group>";
+		};
+		458DF1392759289500A27949 /* Posts */ = {
+			isa = PBXGroup;
+			children = (
+				458DF13B275928AB00A27949 /* Application Logic */,
+				458DF13A275928A300A27949 /* User Interface */,
+			);
+			path = Posts;
+			sourceTree = "<group>";
+		};
+		458DF13A275928A300A27949 /* User Interface */ = {
+			isa = PBXGroup;
+			children = (
+				458DF13E275928C300A27949 /* Presenter */,
+				458DF13D275928BB00A27949 /* Router */,
+				458DF13C275928B500A27949 /* View */,
+			);
+			path = "User Interface";
+			sourceTree = "<group>";
+		};
+		458DF13B275928AB00A27949 /* Application Logic */ = {
+			isa = PBXGroup;
+			children = (
+				458DF140275928D400A27949 /* Configurator */,
+				458DF13F275928CC00A27949 /* Interactor */,
+			);
+			path = "Application Logic";
+			sourceTree = "<group>";
+		};
+		458DF13C275928B500A27949 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				458DF16C27594B3C00A27949 /* Cell Posts Home  */,
+				458DF14C27592B9000A27949 /* PostsHomeViewController.swift */,
+				458DF14D27592B9000A27949 /* PostsHomeViewController.xib */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		458DF13D275928BB00A27949 /* Router */ = {
+			isa = PBXGroup;
+			children = (
+				458DF16A2759440700A27949 /* PostsHomeRouter.swift */,
+			);
+			path = Router;
+			sourceTree = "<group>";
+		};
+		458DF13E275928C300A27949 /* Presenter */ = {
+			isa = PBXGroup;
+			children = (
+				458DF168275941A900A27949 /* PostsHomePresenter.swift */,
+			);
+			path = Presenter;
+			sourceTree = "<group>";
+		};
+		458DF13F275928CC00A27949 /* Interactor */ = {
+			isa = PBXGroup;
+			children = (
+				458DF166275937A600A27949 /* PostsHomeInteractor.swift */,
+			);
+			path = Interactor;
+			sourceTree = "<group>";
+		};
+		458DF140275928D400A27949 /* Configurator */ = {
+			isa = PBXGroup;
+			children = (
+				458DF1602759346900A27949 /* PostsHomeModels.swift */,
+				458DF1622759350F00A27949 /* PostsHomeError.swift */,
+			);
+			path = Configurator;
+			sourceTree = "<group>";
+		};
+		458DF145275929FD00A27949 /* Loading Indicator */ = {
+			isa = PBXGroup;
+			children = (
+				458DF146275929FD00A27949 /* LoadingIndicatorViewController.swift */,
+				458DF147275929FD00A27949 /* LoadingIndicatorViewController.xib */,
+			);
+			path = "Loading Indicator";
+			sourceTree = "<group>";
+		};
+		458DF1592759321F00A27949 /* Posts */ = {
+			isa = PBXGroup;
+			children = (
+				458DF15A2759323900A27949 /* PostEndpoint.swift */,
+				458DF15C2759324600A27949 /* PostsAPI.swift */,
+			);
+			path = Posts;
+			sourceTree = "<group>";
+		};
+		458DF16C27594B3C00A27949 /* Cell Posts Home  */ = {
+			isa = PBXGroup;
+			children = (
+				458DF16D27594B7A00A27949 /* PostsHomeTableViewCell.swift */,
+				458DF16E27594B7A00A27949 /* PostsHomeTableViewCell.xib */,
+			);
+			path = "Cell Posts Home ";
+			sourceTree = "<group>";
+		};
+		458DF1A7275A49F100A27949 /* Posts Details */ = {
+			isa = PBXGroup;
+			children = (
+				458DF1A8275A49FF00A27949 /* Modules */,
+			);
+			path = "Posts Details";
+			sourceTree = "<group>";
+		};
+		458DF1A8275A49FF00A27949 /* Modules */ = {
+			isa = PBXGroup;
+			children = (
+				458DF1A9275A4A0800A27949 /* Posts Details */,
+			);
+			path = Modules;
+			sourceTree = "<group>";
+		};
+		458DF1A9275A4A0800A27949 /* Posts Details */ = {
+			isa = PBXGroup;
+			children = (
+				458DF1AB275A4A2300A27949 /* Application Logic */,
+				458DF1AA275A4A1C00A27949 /* User Interface */,
+			);
+			path = "Posts Details";
+			sourceTree = "<group>";
+		};
+		458DF1AA275A4A1C00A27949 /* User Interface */ = {
+			isa = PBXGroup;
+			children = (
+				458DF1B0275A4A4900A27949 /* Presenter */,
+				458DF1AF275A4A4400A27949 /* Router */,
+				458DF1AE275A4A3F00A27949 /* View */,
+			);
+			path = "User Interface";
+			sourceTree = "<group>";
+		};
+		458DF1AB275A4A2300A27949 /* Application Logic */ = {
+			isa = PBXGroup;
+			children = (
+				458DF1AD275A4A3100A27949 /* Configurator */,
+				458DF1AC275A4A2C00A27949 /* Interactor */,
+			);
+			path = "Application Logic";
+			sourceTree = "<group>";
+		};
+		458DF1AC275A4A2C00A27949 /* Interactor */ = {
+			isa = PBXGroup;
+			children = (
+				458DF1B5275A4AFD00A27949 /* PostsDetailsInteractor.swift */,
+			);
+			path = Interactor;
+			sourceTree = "<group>";
+		};
+		458DF1AD275A4A3100A27949 /* Configurator */ = {
+			isa = PBXGroup;
+			children = (
+				458DF1B3275A4AE000A27949 /* PostsDetailsModels.swift */,
+			);
+			path = Configurator;
+			sourceTree = "<group>";
+		};
+		458DF1AE275A4A3F00A27949 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				458DF1BB275A4B2800A27949 /* PostsDetailsViewController.swift */,
+				458DF1BC275A4B2800A27949 /* PostsDetailsViewController.xib */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		458DF1AF275A4A4400A27949 /* Router */ = {
+			isa = PBXGroup;
+			children = (
+				458DF1B9275A4B1900A27949 /* PostsDetailsRouter.swift */,
+			);
+			path = Router;
+			sourceTree = "<group>";
+		};
+		458DF1B0275A4A4900A27949 /* Presenter */ = {
+			isa = PBXGroup;
+			children = (
+				458DF1B7275A4B0E00A27949 /* PostsDetailsPresenter.swift */,
+			);
+			path = Presenter;
+			sourceTree = "<group>";
+		};
+		458DF1BF275A529600A27949 /* Fonts */ = {
+			isa = PBXGroup;
+			children = (
+				458DF1C0275A529600A27949 /* Inter */,
+				458DF1CA275A529600A27949 /* Roboto */,
+			);
+			path = Fonts;
+			sourceTree = "<group>";
+		};
+		458DF1C0275A529600A27949 /* Inter */ = {
+			isa = PBXGroup;
+			children = (
+				458DF1C1275A529600A27949 /* Inter-Medium.ttf */,
+				458DF1C2275A529600A27949 /* Inter-Light.ttf */,
+				458DF1C3275A529600A27949 /* Inter-Thin.ttf */,
+				458DF1C4275A529600A27949 /* Inter-Bold.ttf */,
+				458DF1C5275A529600A27949 /* Inter-Regular.ttf */,
+				458DF1C6275A529600A27949 /* Inter-ExtraBold.ttf */,
+				458DF1C7275A529600A27949 /* Inter-ExtraLight.ttf */,
+				458DF1C8275A529600A27949 /* Inter-Black.ttf */,
+				458DF1C9275A529600A27949 /* Inter-SemiBold.ttf */,
+			);
+			path = Inter;
+			sourceTree = "<group>";
+		};
+		458DF1CA275A529600A27949 /* Roboto */ = {
+			isa = PBXGroup;
+			children = (
+				458DF1CB275A529600A27949 /* Roboto-Medium.ttf */,
+				458DF1CC275A529600A27949 /* Roboto-Light.ttf */,
+				458DF1CD275A529600A27949 /* Roboto-Regular.ttf */,
+				458DF1CE275A529600A27949 /* Roboto-MediumItalic.ttf */,
+				458DF1CF275A529600A27949 /* Roboto-ThinItalic.ttf */,
+				458DF1D0275A529600A27949 /* Roboto-BoldItalic.ttf */,
+				458DF1D1275A529600A27949 /* Roboto-LightItalic.ttf */,
+				458DF1D2275A529600A27949 /* Roboto-Italic.ttf */,
+				458DF1D3275A529600A27949 /* Roboto-BlackItalic.ttf */,
+				458DF1D4275A529600A27949 /* Roboto-Bold.ttf */,
+				458DF1D5275A529600A27949 /* Roboto-Thin.ttf */,
+				458DF1D6275A529600A27949 /* Roboto-Black.ttf */,
+			);
+			path = Roboto;
+			sourceTree = "<group>";
+		};
+		458DF1EC275AB1B500A27949 /* Test Endpoint */ = {
+			isa = PBXGroup;
+			children = (
+				458DF1ED275AB1C500A27949 /* HomeEndpointTest.swift */,
+			);
+			path = "Test Endpoint";
+			sourceTree = "<group>";
+		};
+		458DF1EF275AB38400A27949 /* Test Response API */ = {
+			isa = PBXGroup;
+			children = (
+				458DF1F2275AB39F00A27949 /* Success Case */,
+				458DF1F1275AB39700A27949 /* Failure Case */,
+				458DF1F0275AB38F00A27949 /* Workers Mocks */,
+			);
+			path = "Test Response API";
+			sourceTree = "<group>";
+		};
+		458DF1F0275AB38F00A27949 /* Workers Mocks */ = {
+			isa = PBXGroup;
+			children = (
+				458DF1F3275AB52000A27949 /* PostsHomeWorkerMock.swift */,
+			);
+			path = "Workers Mocks";
+			sourceTree = "<group>";
+		};
+		458DF1F1275AB39700A27949 /* Failure Case */ = {
+			isa = PBXGroup;
+			children = (
+				458DF1F5275AB6E400A27949 /* PostsHomeFailureResponse.swift */,
+			);
+			path = "Failure Case";
+			sourceTree = "<group>";
+		};
+		458DF1F2275AB39F00A27949 /* Success Case */ = {
+			isa = PBXGroup;
+			children = (
+				458DF1F7275AB97F00A27949 /* PostsHomeSuccessResponse.swift */,
+			);
+			path = "Success Case";
+			sourceTree = "<group>";
+		};
+		458DF1FA275AC02300A27949 /* PostsHomeModuleTest */ = {
+			isa = PBXGroup;
+			children = (
+				458DF206275AC42B00A27949 /* Interactor */,
+				458DF203275AC33500A27949 /* Presenter */,
+				458DF200275AC17200A27949 /* View Controller */,
+				458DF1FB275AC03A00A27949 /* Mocks */,
+			);
+			path = PostsHomeModuleTest;
+			sourceTree = "<group>";
+		};
+		458DF1FB275AC03A00A27949 /* Mocks */ = {
+			isa = PBXGroup;
+			children = (
+				458DF1FE275AC05B00A27949 /* PostsHomePresentationLogicMock.swift */,
+				458DF1FC275AC04F00A27949 /* PostsHomeDisplayLogicMock.swift */,
+			);
+			path = Mocks;
+			sourceTree = "<group>";
+		};
+		458DF200275AC17200A27949 /* View Controller */ = {
+			isa = PBXGroup;
+			children = (
+				458DF201275AC17F00A27949 /* PostsHomeViewControllerTest.swift */,
+			);
+			path = "View Controller";
+			sourceTree = "<group>";
+		};
+		458DF203275AC33500A27949 /* Presenter */ = {
+			isa = PBXGroup;
+			children = (
+				458DF204275AC34400A27949 /* PostsHomePresenterTest.swift */,
+			);
+			path = Presenter;
+			sourceTree = "<group>";
+		};
+		458DF206275AC42B00A27949 /* Interactor */ = {
+			isa = PBXGroup;
+			children = (
+				458DF207275AC43E00A27949 /* PostsHomeInteractorTest.swift */,
+			);
+			path = Interactor;
+			sourceTree = "<group>";
+		};
+		458DF209275AC5A500A27949 /* PostsDetailsModuleTest */ = {
+			isa = PBXGroup;
+			children = (
+				458DF20D275AC5CE00A27949 /* Interactor */,
+				458DF20C275AC5C700A27949 /* Presenter */,
+				458DF20B275AC5BE00A27949 /* View Controller */,
+				458DF20A275AC5B700A27949 /* Mocks */,
+			);
+			path = PostsDetailsModuleTest;
+			sourceTree = "<group>";
+		};
+		458DF20A275AC5B700A27949 /* Mocks */ = {
+			isa = PBXGroup;
+			children = (
+				458DF210275AC64F00A27949 /* PostsDetailsPresentationLogicMock.swift */,
+				458DF20E275AC5F900A27949 /* PostsDetailsDisplayLogicMock.swift */,
+			);
+			path = Mocks;
+			sourceTree = "<group>";
+		};
+		458DF20B275AC5BE00A27949 /* View Controller */ = {
+			isa = PBXGroup;
+			children = (
+				458DF212275AC6A200A27949 /* PostsDetailsViewControllerTest.swift */,
+			);
+			path = "View Controller";
+			sourceTree = "<group>";
+		};
+		458DF20C275AC5C700A27949 /* Presenter */ = {
+			isa = PBXGroup;
+			children = (
+				458DF214275AC73500A27949 /* PostsDetailsPresenterTest.swift */,
+			);
+			path = Presenter;
+			sourceTree = "<group>";
+		};
+		458DF20D275AC5CE00A27949 /* Interactor */ = {
+			isa = PBXGroup;
+			children = (
+				458DF216275AC81C00A27949 /* PostsDetailsInteractorTest.swift */,
+			);
+			path = Interactor;
+			sourceTree = "<group>";
+		};
+		DDBB6F940140AB4585FCA07C /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				1227BD9A88F3DEA417B86078 /* Pods_ZemogaApp_iOS.framework */,
+				163081A811888D91228BD02B /* Pods_ZemogaApp_iOS_ZemogaApp_iOSUITests.framework */,
+				4F4A6FF2F6EE448E5E5E4792 /* Pods_ZemogaApp_iOSTests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		458DF0ED27590F1100A27949 /* ZemogaApp-iOS */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 458DF11B27590F1400A27949 /* Build configuration list for PBXNativeTarget "ZemogaApp-iOS" */;
+			buildPhases = (
+				F24D499861A7B874CA362560 /* [CP] Check Pods Manifest.lock */,
+				458DF0EA27590F1100A27949 /* Sources */,
+				458DF0EB27590F1100A27949 /* Frameworks */,
+				458DF0EC27590F1100A27949 /* Resources */,
+				6A02A04BC607FB53F57A2B76 /* [CP] Embed Pods Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "ZemogaApp-iOS";
+			productName = "ZemogaApp-iOS";
+			productReference = 458DF0EE27590F1100A27949 /* ZemogaApp-iOS.app */;
+			productType = "com.apple.product-type.application";
+		};
+		458DF10627590F1400A27949 /* ZemogaApp-iOSTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 458DF11E27590F1400A27949 /* Build configuration list for PBXNativeTarget "ZemogaApp-iOSTests" */;
+			buildPhases = (
+				E9E61ECFCD91307F1302D788 /* [CP] Check Pods Manifest.lock */,
+				458DF10327590F1400A27949 /* Sources */,
+				458DF10427590F1400A27949 /* Frameworks */,
+				458DF10527590F1400A27949 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				458DF10927590F1400A27949 /* PBXTargetDependency */,
+			);
+			name = "ZemogaApp-iOSTests";
+			productName = "ZemogaApp-iOSTests";
+			productReference = 458DF10727590F1400A27949 /* ZemogaApp-iOSTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		458DF11127590F1400A27949 /* ZemogaApp-iOSUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 458DF12127590F1400A27949 /* Build configuration list for PBXNativeTarget "ZemogaApp-iOSUITests" */;
+			buildPhases = (
+				9A39A9957F18EDB00D4777DB /* [CP] Check Pods Manifest.lock */,
+				458DF10E27590F1400A27949 /* Sources */,
+				458DF10F27590F1400A27949 /* Frameworks */,
+				458DF11027590F1400A27949 /* Resources */,
+				59157D166420FCAC77F5A212 /* [CP] Embed Pods Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				458DF11427590F1400A27949 /* PBXTargetDependency */,
+			);
+			name = "ZemogaApp-iOSUITests";
+			productName = "ZemogaApp-iOSUITests";
+			productReference = 458DF11227590F1400A27949 /* ZemogaApp-iOSUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		458DF0E627590F1100A27949 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1250;
+				LastUpgradeCheck = 1250;
+				TargetAttributes = {
+					458DF0ED27590F1100A27949 = {
+						CreatedOnToolsVersion = 12.5;
+					};
+					458DF10627590F1400A27949 = {
+						CreatedOnToolsVersion = 12.5;
+						TestTargetID = 458DF0ED27590F1100A27949;
+					};
+					458DF11127590F1400A27949 = {
+						CreatedOnToolsVersion = 12.5;
+						TestTargetID = 458DF0ED27590F1100A27949;
+					};
+				};
+			};
+			buildConfigurationList = 458DF0E927590F1100A27949 /* Build configuration list for PBXProject "ZemogaApp-iOS" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 458DF0E527590F1100A27949;
+			productRefGroup = 458DF0EF27590F1100A27949 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				458DF0ED27590F1100A27949 /* ZemogaApp-iOS */,
+				458DF10627590F1400A27949 /* ZemogaApp-iOSTests */,
+				458DF11127590F1400A27949 /* ZemogaApp-iOSUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		458DF0EC27590F1100A27949 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				458DF10127590F1300A27949 /* LaunchScreen.storyboard in Resources */,
+				458DF1DC275A529600A27949 /* Inter-ExtraBold.ttf in Resources */,
+				458DF1D8275A529600A27949 /* Inter-Light.ttf in Resources */,
+				458DF1E4275A529600A27949 /* Roboto-ThinItalic.ttf in Resources */,
+				458DF1E0275A529600A27949 /* Roboto-Medium.ttf in Resources */,
+				458DF1DD275A529600A27949 /* Inter-ExtraLight.ttf in Resources */,
+				458DF1DA275A529600A27949 /* Inter-Bold.ttf in Resources */,
+				458DF14F27592B9000A27949 /* PostsHomeViewController.xib in Resources */,
+				458DF17027594B7A00A27949 /* PostsHomeTableViewCell.xib in Resources */,
+				458DF1E1275A529600A27949 /* Roboto-Light.ttf in Resources */,
+				458DF1DE275A529600A27949 /* Inter-Black.ttf in Resources */,
+				458DF1EB275A529600A27949 /* Roboto-Black.ttf in Resources */,
+				458DF1E6275A529600A27949 /* Roboto-LightItalic.ttf in Resources */,
+				458DF149275929FD00A27949 /* LoadingIndicatorViewController.xib in Resources */,
+				458DF1E7275A529600A27949 /* Roboto-Italic.ttf in Resources */,
+				458DF1E9275A529600A27949 /* Roboto-Bold.ttf in Resources */,
+				458DF1E5275A529600A27949 /* Roboto-BoldItalic.ttf in Resources */,
+				458DF1D7275A529600A27949 /* Inter-Medium.ttf in Resources */,
+				458DF1EA275A529600A27949 /* Roboto-Thin.ttf in Resources */,
+				458DF1BE275A4B2800A27949 /* PostsDetailsViewController.xib in Resources */,
+				458DF1E8275A529600A27949 /* Roboto-BlackItalic.ttf in Resources */,
+				458DF0FE27590F1300A27949 /* Assets.xcassets in Resources */,
+				458DF1DF275A529600A27949 /* Inter-SemiBold.ttf in Resources */,
+				458DF1E2275A529600A27949 /* Roboto-Regular.ttf in Resources */,
+				458DF1E3275A529600A27949 /* Roboto-MediumItalic.ttf in Resources */,
+				458DF1D9275A529600A27949 /* Inter-Thin.ttf in Resources */,
+				4543B558275C902300404AC0 /* ZAModal.storyboard in Resources */,
+				458DF1DB275A529600A27949 /* Inter-Regular.ttf in Resources */,
+				458DF0F927590F1100A27949 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		458DF10527590F1400A27949 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		458DF11027590F1400A27949 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		59157D166420FCAC77F5A212 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-ZemogaApp-iOS-ZemogaApp-iOSUITests/Pods-ZemogaApp-iOS-ZemogaApp-iOSUITests-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-ZemogaApp-iOS-ZemogaApp-iOSUITests/Pods-ZemogaApp-iOS-ZemogaApp-iOSUITests-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-ZemogaApp-iOS-ZemogaApp-iOSUITests/Pods-ZemogaApp-iOS-ZemogaApp-iOSUITests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		6A02A04BC607FB53F57A2B76 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-ZemogaApp-iOS/Pods-ZemogaApp-iOS-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-ZemogaApp-iOS/Pods-ZemogaApp-iOS-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-ZemogaApp-iOS/Pods-ZemogaApp-iOS-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		9A39A9957F18EDB00D4777DB /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-ZemogaApp-iOS-ZemogaApp-iOSUITests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		E9E61ECFCD91307F1302D788 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-ZemogaApp-iOSTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		F24D499861A7B874CA362560 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-ZemogaApp-iOS-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		458DF0EA27590F1100A27949 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				458DF14B27592A8D00A27949 /* UIViewController+ZA.swift in Sources */,
+				458DF1562759305800A27949 /* UINavigationController+ZA.swift in Sources */,
+				458DF15D2759324600A27949 /* PostsAPI.swift in Sources */,
+				458DF1632759350F00A27949 /* PostsHomeError.swift in Sources */,
+				458DF1B6275A4AFD00A27949 /* PostsDetailsInteractor.swift in Sources */,
+				458DF14E27592B9000A27949 /* PostsHomeViewController.swift in Sources */,
+				458DF169275941A900A27949 /* PostsHomePresenter.swift in Sources */,
+				458DF17427596CD800A27949 /* ZAView.swift in Sources */,
+				458DF15127592F1700A27949 /* AppRoute.swift in Sources */,
+				458DF0FC27590F1100A27949 /* ZemogaApp_iOS.xcdatamodeld in Sources */,
+				458DF1BA275A4B1900A27949 /* PostsDetailsRouter.swift in Sources */,
+				458DF1612759346900A27949 /* PostsHomeModels.swift in Sources */,
+				458DF167275937A600A27949 /* PostsHomeInteractor.swift in Sources */,
+				458DF148275929FD00A27949 /* LoadingIndicatorViewController.swift in Sources */,
+				458DF165275935F900A27949 /* PostsWorker.swift in Sources */,
+				458DF1BD275A4B2800A27949 /* PostsDetailsViewController.swift in Sources */,
+				4543B55A275C90BA00404AC0 /* ModalViewController.swift in Sources */,
+				458DF16F27594B7A00A27949 /* PostsHomeTableViewCell.swift in Sources */,
+				4543B55C275E532900404AC0 /* UIImageView+ZA.swift in Sources */,
+				458DF16B2759440700A27949 /* PostsHomeRouter.swift in Sources */,
+				458DF1B4275A4AE000A27949 /* PostsDetailsModels.swift in Sources */,
+				458DF15F275933BA00A27949 /* Posts.swift in Sources */,
+				458DF0F627590F1100A27949 /* BaseViewController.swift in Sources */,
+				458DF144275929B200A27949 /* ZASettings.swift in Sources */,
+				458DF0F227590F1100A27949 /* AppDelegate.swift in Sources */,
+				458DF15427592F4F00A27949 /* GeneralRoute.swift in Sources */,
+				458DF1722759576000A27949 /* UIBarButtonItem+Badge.swift in Sources */,
+				458DF1582759312700A27949 /* NetworkService.swift in Sources */,
+				458DF1B8275A4B0E00A27949 /* PostsDetailsPresenter.swift in Sources */,
+				458DF15B2759323900A27949 /* PostEndpoint.swift in Sources */,
+				458DF1422759297200A27949 /* Helper.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		458DF10327590F1400A27949 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				458DF1F8275AB97F00A27949 /* PostsHomeSuccessResponse.swift in Sources */,
+				458DF213275AC6A200A27949 /* PostsDetailsViewControllerTest.swift in Sources */,
+				458DF1F4275AB52000A27949 /* PostsHomeWorkerMock.swift in Sources */,
+				458DF215275AC73500A27949 /* PostsDetailsPresenterTest.swift in Sources */,
+				458DF1FF275AC05B00A27949 /* PostsHomePresentationLogicMock.swift in Sources */,
+				458DF20F275AC5F900A27949 /* PostsDetailsDisplayLogicMock.swift in Sources */,
+				458DF1FD275AC04F00A27949 /* PostsHomeDisplayLogicMock.swift in Sources */,
+				458DF205275AC34400A27949 /* PostsHomePresenterTest.swift in Sources */,
+				458DF208275AC43E00A27949 /* PostsHomeInteractorTest.swift in Sources */,
+				458DF10C27590F1400A27949 /* ZemogaApp_iOSTests.swift in Sources */,
+				458DF1F6275AB6E400A27949 /* PostsHomeFailureResponse.swift in Sources */,
+				458DF211275AC64F00A27949 /* PostsDetailsPresentationLogicMock.swift in Sources */,
+				458DF1EE275AB1C500A27949 /* HomeEndpointTest.swift in Sources */,
+				458DF217275AC81C00A27949 /* PostsDetailsInteractorTest.swift in Sources */,
+				458DF202275AC17F00A27949 /* PostsHomeViewControllerTest.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		458DF10E27590F1400A27949 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				458DF11727590F1400A27949 /* ZemogaApp_iOSUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		458DF10927590F1400A27949 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 458DF0ED27590F1100A27949 /* ZemogaApp-iOS */;
+			targetProxy = 458DF10827590F1400A27949 /* PBXContainerItemProxy */;
+		};
+		458DF11427590F1400A27949 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 458DF0ED27590F1100A27949 /* ZemogaApp-iOS */;
+			targetProxy = 458DF11327590F1400A27949 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		458DF0F727590F1100A27949 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				458DF0F827590F1100A27949 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		458DF0FF27590F1300A27949 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				458DF10027590F1300A27949 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		458DF11927590F1400A27949 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.5;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		458DF11A27590F1400A27949 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.5;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		458DF11C27590F1400A27949 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 45C10237E509E7D8C65BE1E9 /* Pods-ZemogaApp-iOS.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = RP42U42DBN;
+				INFOPLIST_FILE = "ZemogaApp-iOS/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.ZemogaApp-iOS";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		458DF11D27590F1400A27949 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = C7A0656F5E3891E28812511E /* Pods-ZemogaApp-iOS.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = RP42U42DBN;
+				INFOPLIST_FILE = "ZemogaApp-iOS/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.ZemogaApp-iOS";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		458DF11F27590F1400A27949 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 5A17683C491BE534BD789B79 /* Pods-ZemogaApp-iOSTests.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = RP42U42DBN;
+				INFOPLIST_FILE = "ZemogaApp-iOSTests/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 14.5;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com..ZemogaApp-iOSTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/ZemogaApp-iOS.app/ZemogaApp-iOS";
+			};
+			name = Debug;
+		};
+		458DF12027590F1400A27949 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 13EA951F4698AFE33B2977AE /* Pods-ZemogaApp-iOSTests.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = RP42U42DBN;
+				INFOPLIST_FILE = "ZemogaApp-iOSTests/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 14.5;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com..ZemogaApp-iOSTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/ZemogaApp-iOS.app/ZemogaApp-iOS";
+			};
+			name = Release;
+		};
+		458DF12227590F1400A27949 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = ACB95DF8F6ECFAD4230BAACB /* Pods-ZemogaApp-iOS-ZemogaApp-iOSUITests.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = RP42U42DBN;
+				INFOPLIST_FILE = "ZemogaApp-iOSUITests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com..ZemogaApp-iOSUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = "ZemogaApp-iOS";
+			};
+			name = Debug;
+		};
+		458DF12327590F1400A27949 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = A9CEFAEDACB568A60707A785 /* Pods-ZemogaApp-iOS-ZemogaApp-iOSUITests.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = RP42U42DBN;
+				INFOPLIST_FILE = "ZemogaApp-iOSUITests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com..ZemogaApp-iOSUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = "ZemogaApp-iOS";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		458DF0E927590F1100A27949 /* Build configuration list for PBXProject "ZemogaApp-iOS" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				458DF11927590F1400A27949 /* Debug */,
+				458DF11A27590F1400A27949 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		458DF11B27590F1400A27949 /* Build configuration list for PBXNativeTarget "ZemogaApp-iOS" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				458DF11C27590F1400A27949 /* Debug */,
+				458DF11D27590F1400A27949 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		458DF11E27590F1400A27949 /* Build configuration list for PBXNativeTarget "ZemogaApp-iOSTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				458DF11F27590F1400A27949 /* Debug */,
+				458DF12027590F1400A27949 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		458DF12127590F1400A27949 /* Build configuration list for PBXNativeTarget "ZemogaApp-iOSUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				458DF12227590F1400A27949 /* Debug */,
+				458DF12327590F1400A27949 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		458DF0FA27590F1100A27949 /* ZemogaApp_iOS.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				458DF0FB27590F1100A27949 /* ZemogaApp_iOS.xcdatamodel */,
+			);
+			currentVersion = 458DF0FB27590F1100A27949 /* ZemogaApp_iOS.xcdatamodel */;
+			path = ZemogaApp_iOS.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
+	};
+	rootObject = 458DF0E627590F1100A27949 /* Project object */;
+}
